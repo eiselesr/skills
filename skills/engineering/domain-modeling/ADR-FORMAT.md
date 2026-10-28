@@ -22,9 +22,11 @@ Only include these when they add genuine value. Most ADRs won't need them.
 - **Considered Options**: only when the rejected alternatives are worth remembering
 - **Consequences**: only when non-obvious downstream effects need to be called out
 
-## Numbering
+## Numbering and naming
 
 Scan `docs/adr/` for the highest existing number and increment by one.
+
+The slug names the question; the title states the decision: `0007-comparing-scenarios.md`, titled `# Scenarios share a fixed evaluation window`. A changed answer then edits the title and body, and every link to the file still holds.
 
 ## When to offer an ADR
 
