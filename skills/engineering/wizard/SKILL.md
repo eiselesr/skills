@@ -26,9 +26,11 @@ Then show the user the ordered list of stages and the values each produces, and 
 
 ### 2. Map each stage's journey
 
-For each stage, write the precise path a human follows: which URL to open, what to do there, where a value is shown, which variable it fills: e.g. "Dashboard → Developers → API keys → Reveal test key → copy". Where you don't actually know the current UI or the exact command, say so and ask the user or check the docs: never invent steps that may not exist.
+Where the service has an API or CLI that does the stage's job, the wizard calls it and asks the human only for the credential: a value the script sends can't land in the wrong field. Clicks are for what only a browser can do (sign-up, sign-in, payment, revealing a token).
 
-**Done when:** every stage traces to concrete instructions a stranger could follow.
+For each click stage, write the precise path a human follows: which URL to open, what to do there, where a value is shown, which variable it fills: e.g. "Dashboard → Developers → API keys → Reveal test key → copy". Check each path against the service's current docs or a screenshot from the user. Where a page fills in a value for the human, say what it fills and whether to keep it. Where the expected option can be missing (sold out, region-limited, renamed), name the fallback.
+
+**Done when:** every stage traces to concrete instructions a stranger could follow, and you have told the user which click steps you checked and which come from memory.
 
 ### 3. Author the wizard
 
