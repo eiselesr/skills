@@ -30,13 +30,16 @@ If the tickets came from [to-tickets](https://aihero.dev/skills-to-tickets), [se
 
 ## What one run does
 
-A run has five steps, in order:
+A run has six steps, in order:
 
 1. Read the ticket or spec and work out the seams.
 2. Drive [tdd](https://aihero.dev/skills-tdd) at the pre-agreed seams, one red-green slice at a time.
 3. Typecheck often, run single test files as it goes.
 4. Run the full test suite once, at the end.
-5. Run [code-review](https://aihero.dev/skills-code-review), then commit to the current branch.
+5. Run [code-review](https://aihero.dev/skills-code-review).
+6. For a ticket, sweep the deferrals: find every open issue that cites the ticket and hands it work, and either do that work or fix the issue's body. Then commit to the current branch.
+
+The sweep exists because a deferral lives in the other issue, not in the ticket. An issue that says "#6 adds the check" is invisible from #6, so #6 can close without the check and nothing notices.
 
 One run covers one ticket. The tickets [to-tickets](https://aihero.dev/skills-to-tickets) produces are tracer-bullet vertical slices sized to fit a single fresh [context window](https://www.aihero.dev/ai-coding-dictionary/context-window), so the intended rhythm is: clear context, implement one ticket, commit, clear again. Each ticket is self-contained, so you can discard the previous ticket's context.
 
