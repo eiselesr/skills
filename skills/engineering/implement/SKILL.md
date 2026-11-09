@@ -17,7 +17,7 @@ Unless the user says the ticket came from `/to-tickets`, check it before writing
 3. Check every claim the body makes (domain terms, rules, figures, file and symbol names) against the glossary, the ADRs it touches, and the code. Grep for the sections you need.
 4. If the ticket removes an output (a file, a column, a plot), it names who updates the docs that cite it.
 
-Done when every claim is confirmed or listed as a conflict. With none, carry on. With any, stop: give the user the list and recommend `/grill-with-docs` on the ticket first. If the ticket will touch more files than one session can hold, recommend `/to-tickets` or `/implement-spec` instead.
+Done when every claim is confirmed or listed as a conflict. A conflict that changes what the ticket's *Done when* asks for stops the work: give the user the list and recommend `/grill-with-docs` on the ticket first. Any other conflict goes in the PR body, and the work carries on. If the ticket will touch more files than one session can hold, recommend `/to-tickets` or `/implement-spec` instead.
 
 ## Build
 
