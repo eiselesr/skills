@@ -9,7 +9,7 @@ Three-axis review of the diff between `HEAD` and a fixed point the user supplies
 - **Spec**: does the code faithfully implement the originating issue / spec?
 - **Defects**: what input or path makes the new code hang, crash, or return a wrong result?
 
-The axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings.
+The axes run as **parallel sub-agents** so they don't pollute each other's context, then this skill aggregates their findings. Start every sub-agent with a fresh context window.
 
 The issue tracker should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`.
 
