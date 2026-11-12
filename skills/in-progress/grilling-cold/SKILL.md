@@ -1,6 +1,6 @@
 ---
 name: grilling-cold
-description: Grilling whose questions a cold reader can answer: the problem first, at most three a round, only sound options.
+description: "Grilling whose questions a cold reader can answer: the problem first, at most three a round, only sound options."
 disable-model-invocation: true
 ---
 
