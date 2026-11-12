@@ -1,0 +1,5 @@
+interface:
+  display_name: "Grilling (cold)"
+  short_description: "Grilling with questions a cold reader can answer"
+policy:
+  allow_implicit_invocation: false
