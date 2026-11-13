@@ -25,8 +25,6 @@ Call the Skill tool with "tdd" where possible, at pre-agreed seams.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Once done, call the Skill tool with "code-review" to review the work.
-
 ## Sweep the deferrals
 
 When the work is a ticket, other open issues may hand work to it ("#6 adds the check"). Search the tracker for every open issue that cites the ticket, across every repo it spans; the repo's issue-tracker doc names the search tool if it has one. For each issue that defers work to this ticket, either do that work in this run or fix the issue's body to say where the work now goes.
@@ -36,3 +34,7 @@ Done when every citing issue is read and none still points at this ticket for wo
 ## Commit
 
 Commit your work to the current branch.
+
+## Review
+
+Call the Skill tool with "code-review" to review the work. It runs after the commit because it diffs a fixed point against `HEAD`: uncommitted work is not in that diff.
