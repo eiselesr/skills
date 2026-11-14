@@ -77,7 +77,8 @@ If the spec is missing, skip the Spec sub-agent and note this in the final repor
 **Defects sub-agent prompt** should include:
 
 - The diff command and commit list.
-- The brief: "Hunt for defects in the code this diff adds or changes. For each new or changed function, try: an empty collection, a value exactly on a boundary, a very large value, a decimal that floats round (`0.1 + 0.2`), and any other path that reaches what a new guard protects (a nested key, a second caller, an override). For each Hypothesis strategy in the diff, name what its bounds exclude (`min_size`, value ranges, a whole-number grid) and check whether the code handles it. Report each defect as the input and the wrong outcome (hang, crash, wrong value), with file and line. Report only what you can show; a suspicion goes under its own heading. Under 400 words."
+- The list of standards-source files you found in step 3, for the rules they set on refusals.
+- The brief: "Hunt for defects in the code this diff adds or changes. For each new or changed function, try: an empty collection, a value exactly on a boundary, a very large value, a decimal that floats round (`0.1 + 0.2`), and any other path that reaches what a new guard protects (a nested key, a second caller, an override). For each Hypothesis strategy in the diff, name what its bounds exclude (`min_size`, value ranges, a whole-number grid) and check whether the code handles it. For each new refusal or raise, follow it out to the outermost entry point (a CLI, an HTTP handler, a service call), say what that caller sees and what work runs before the refusal, and check it against any rule the standards files set for refusals. Report each defect as the input and the wrong outcome (hang, crash, wrong value), with file and line. Report only what you can show; a suspicion goes under its own heading. Under 400 words."
 
 ### 5. Aggregate
 
