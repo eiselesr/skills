@@ -15,4 +15,5 @@ npx skills@latest add mattpocock/skills --skill=<name>
 - **[claude-handoff](./claude-handoff/SKILL.md)**: Hand the current conversation off to a fresh background agent that picks up the work immediately, seeded with a handoff summary via `claude --bg`. User-invoked.
 - **[setup-ts-deep-modules](./setup-ts-deep-modules/SKILL.md)**: Wire dependency-cruiser into a TypeScript repo so each package is a deep module: implementation hidden in subfolders, reachable only through its entry-point files, tests exercising it through those. User-invoked.
 - **[software-factory](./software-factory/SKILL.md)**: Shared language for designing a software factory: the tasks it runs and the services it plugs into. Call it alongside a grilling session. User-invoked.
-- **[grilling-cold](./grilling-cold/SKILL.md)**: A trial of `grilling` whose questions a cold reader can answer: the problem first, at most three a round, only sound options. User-invoked.
+- **[grilling-cold](./grilling-cold/SKILL.md)**: A trial of `grilling` whose questions a cold reader can answer: the problem first, at most three a round, only sound options.
+- **[grilling-cold-with-docs](./grilling-cold-with-docs/SKILL.md)**: `grilling-cold` plus `domain-modeling`, so the session updates `GLOSSARY.md` and ADRs as it goes, like `grill-with-docs`. User-invoked.

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Grilling (cold) with Docs"
+  short_description: "Cold-reader grilling that writes its docs"
+policy:
+  allow_implicit_invocation: false

@@ -1,7 +1,6 @@
 ---
 name: grilling-cold
 description: "Grilling whose questions a cold reader can answer: the problem first, at most three a round, only sound options."
-disable-model-invocation: true
 ---
 
 Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.
