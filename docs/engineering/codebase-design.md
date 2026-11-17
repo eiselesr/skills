@@ -10,6 +10,8 @@ Type `/codebase-design`, or the agent reaches for it automatically when a design
 
 Reach for it when you already know which code you're redesigning and you need to think about its shape: where the seam goes, how small the interface can get, whether an extraction removes complexity from its callers. Also use it to settle an argument about what a design word means.
 
+In the main flow it comes after the grilling and before [to-spec](https://aihero.dev/skills-to-spec), whenever the work adds a module, adds a seam or changes a module's interface. That holds for a new codebase, a new feature, or an old module whose shape gets in the way of the change.
+
 Several skills are close to it. Pick by the problem you have:
 
 | The problem | The skill |
