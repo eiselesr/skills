@@ -33,6 +33,8 @@ Before it writes anything, `to-spec` sketches the **seams** where the feature wi
 
 Other skills use those agreed seams later. [tdd](https://aihero.dev/skills-tdd) works only at seams you agreed in advance. [code-review](https://aihero.dev/skills-code-review) reviews the diff against the spec, so a seam nobody agreed to shows up as a review finding. Both connections go through this document. That is why you should take the seam conversation seriously here, and not leave it for implementation.
 
+`to-spec` records design; it does not do it. If the work adds a module, adds a seam or changes an interface, and nobody designed that shape in the conversation, it stops and sends you to [codebase-design](https://aihero.dev/skills-codebase-design) first. The spec also says which modules are pure and which do I/O, so [code-review](https://aihero.dev/skills-code-review) can check the code against that split.
+
 ## Common questions
 
 **Where did `/to-prd` go?**

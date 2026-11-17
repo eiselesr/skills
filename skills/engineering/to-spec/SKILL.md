@@ -16,6 +16,8 @@ The issue tracker and triage label vocabulary should have been provided to you. 
 
 Check with the user that these seams match their expectations.
 
+If the spec will add a module, add a seam, or change a module's interface, and the conversation holds no design for that shape (the module list, each interface, where the seams go), stop. Tell the user to run `/codebase-design` first, then come back. Don't design the shape here: this skill synthesizes what was decided, and an undesigned shape written into a spec becomes the tickets' plan.
+
 3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
 
 <spec-template>
@@ -46,6 +48,7 @@ A list of implementation decisions that were made. This can include:
 
 - The modules that will be built/modified
 - The interfaces of those modules that will be modified
+- Which modules are pure (take values, return values) and which do I/O (files, network, clock)
 - Technical clarifications from the developer
 - Architectural decisions
 - Schema changes
